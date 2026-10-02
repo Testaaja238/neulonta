@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Villasukat</title>
+</head>
+
+<body><main>
+     <!-- header -->
+    <header style="display:flex; align-items:center; gap:10px;"><img src="Logo.jpg" alt="Neulonta rokkaa" width="104" height="142"> <p>Neulonta rokkaa!</p></header>
+     
+    <!--kortti -laatikkomalli alkaa tästä -->
+        <div class="kortti">
+   
+    <h1>Täältä löydät helppoja villasukkien ohjeita</h1>
+
+     <!-- Painike, joka tulostaa konsoliin ja sivustolle mietteen kun painiketta klikkaa --> 
+        <button id="haeNappi">Hae uusi mieti</button> 
+        <p id="tulosTeksti">Mietelause ilmestyy tähän...</p> 
+        <p><em>Vinkki: Avaa selain, paina näppäimistöltä <strong>F12</strong> ja valitse 
+        <strong>Console</strong> nähdäksesi raakadatan.</em></p> 
+
+     <!-- Sivulla pudotusvalikko, josta valitaan montako mietettä selaimeen palautetaan, kun nappia painaa. Koodi on pyydetty Copilotilta   --> 
+        <h2>Motivaatiomietteet</h2>
+
+        <label for="adviceCount">Valitse haettavien mietteiden määrä:</label>
+        <select id="adviceCount">
+        <option value="1">1 miete</option>
+        <option value="3">3 mietettä</option>
+        <option value="5" selected>5 mietettä</option>
+        <option value="10">10 mietettä</option>
+        </select>
+        <button id="adviceButton">Hae mietteet</button>
+        <ol id="adviceList"></ol>
+
+        <!-- JavaScript tiedosto liittäminen  --> 
+        <script src="script.js"></script> 
+
+
+</body></main>
+
+</div>
+  <!--kortti -laatikkomalli päättyy tähän-->
+
+</html>
